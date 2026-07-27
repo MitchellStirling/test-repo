@@ -1,0 +1,1108 @@
+{
+  "sources": {
+    "players_2425": "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/master/data/2024-25/players_raw.csv",
+    "weekly_2425": "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/master/data/2024-25/gws/merged_gw.csv",
+    "map_2526": "https://raw.githubusercontent.com/olbauday/FPL-Core-Insights/main/data/2025-2026/By%20Gameweek/GW10/players.csv",
+    "gw10_2526": "https://raw.githubusercontent.com/olbauday/FPL-Core-Insights/main/data/2025-2026/By%20Gameweek/GW10/playerstats.csv"
+  },
+  "sample": {
+    "players_2425_at_least_30": 371,
+    "matched_to_gw10": 290,
+    "excluded_not_in_gw10_snapshot": 81
+  },
+  "segments": {
+    "all": {
+      "segment": "All positions",
+      "n": 290,
+      "correlations": {
+        "full_season_2425": {
+          "spearman": {
+            "r": 0.2742394551482879,
+            "p": 2.1249079380956825e-06,
+            "n": 290
+          },
+          "pearson": {
+            "r": 0.3078680123260909,
+            "p": 8.76240298916567e-08,
+            "n": 290
+          }
+        },
+        "gw1_28": {
+          "spearman": {
+            "r": 0.2293414917366612,
+            "p": 8.102877164532085e-05,
+            "n": 290
+          },
+          "pearson": {
+            "r": 0.27721485083174446,
+            "p": 1.6291234954545325e-06,
+            "n": 290
+          }
+        },
+        "gw29_38": {
+          "spearman": {
+            "r": 0.25497946632381224,
+            "p": 1.1012633440826866e-05,
+            "n": 290
+          },
+          "pearson": {
+            "r": 0.23273391038254895,
+            "p": 6.300115964306858e-05,
+            "n": 290
+          }
+        },
+        "acceleration": {
+          "spearman": {
+            "r": 0.04339057904928428,
+            "p": 0.4616878748050801,
+            "n": 290
+          },
+          "pearson": {
+            "r": -0.025414980747873128,
+            "p": 0.6664669727338715,
+            "n": 290
+          }
+        }
+      },
+      "regression": {
+        "early_only_r2": 0.07684807352166645,
+        "early_plus_late_r2": 0.09783094107564427,
+        "incremental_r2": 0.020982867553977824,
+        "late_coefficient": 1.9155826958129,
+        "late_p": 0.010271406481333104,
+        "early_coefficient": 2.9363642689851943,
+        "early_p": 0.0002333011194638615
+      },
+      "cross_validated_r2": {
+        "early_only": {
+          "mean": 0.05781741426153305,
+          "sd": 0.05614360857493777,
+          "folds": 10
+        },
+        "early_plus_late": {
+          "mean": 0.08732064570940838,
+          "sd": 0.06240618944552852,
+          "folds": 10
+        }
+      },
+      "residual_late": {
+        "spearman": {
+          "r": 0.17943553495249281,
+          "p": 0.0021591997871009874,
+          "n": 290
+        },
+        "pearson": {
+          "r": 0.14485464284577754,
+          "p": 0.013542749595362894,
+          "n": 290
+        }
+      },
+      "quartiles": {
+        "late_threshold": 33.0,
+        "f10_threshold": 33.0,
+        "full_season_threshold": 116.75,
+        "top_f10_base_rate": 0.2620689655172414,
+        "top_late_count": 75,
+        "top_late_and_top_f10_count": 26,
+        "top_late_hit_rate": 0.3466666666666667,
+        "top_late_lift_vs_base": 1.3228070175438595,
+        "top_full_count": 73,
+        "top_full_and_top_f10_count": 29,
+        "top_full_hit_rate": 0.3972602739726027,
+        "top_full_lift_vs_base": 1.5158615717375628,
+        "mean_f10_top_late": 26.30666666666667,
+        "mean_f10_others": 19.63720930232558,
+        "difference_in_means": 6.669457364341088
+      }
+    },
+    "mid_fwd": {
+      "segment": "MID/FWD",
+      "n": 175,
+      "correlations": {
+        "full_season_2425": {
+          "spearman": {
+            "r": 0.28144153567618424,
+            "p": 0.00016130000736406334,
+            "n": 175
+          },
+          "pearson": {
+            "r": 0.3513065249920822,
+            "p": 1.8711034850819856e-06,
+            "n": 175
+          }
+        },
+        "gw1_28": {
+          "spearman": {
+            "r": 0.23095433257296952,
+            "p": 0.0021048442695866545,
+            "n": 175
+          },
+          "pearson": {
+            "r": 0.30492373954607227,
+            "p": 4.078315481328322e-05,
+            "n": 175
+          }
+        },
+        "gw29_38": {
+          "spearman": {
+            "r": 0.3284062487636594,
+            "p": 9.123766669731243e-06,
+            "n": 175
+          },
+          "pearson": {
+            "r": 0.3112368496002234,
+            "p": 2.7604902461034496e-05,
+            "n": 175
+          }
+        },
+        "acceleration": {
+          "spearman": {
+            "r": 0.10180540121417278,
+            "p": 0.18005256640612896,
+            "n": 175
+          },
+          "pearson": {
+            "r": -0.0003124133246205224,
+            "p": 0.996726111655086,
+            "n": 175
+          }
+        }
+      },
+      "regression": {
+        "early_only_r2": 0.09297848693876098,
+        "early_plus_late_r2": 0.1377320020249695,
+        "incremental_r2": 0.044753515086208506,
+        "late_coefficient": 2.643470509775071,
+        "late_p": 0.003220652109332088,
+        "early_coefficient": 2.471943085181037,
+        "early_p": 0.004832853671411205
+      },
+      "cross_validated_r2": {
+        "early_only": {
+          "mean": 0.015174011899566395,
+          "sd": 0.12536399998800551,
+          "folds": 8
+        },
+        "early_plus_late": {
+          "mean": 0.014848298251416384,
+          "sd": 0.21541343964430418,
+          "folds": 8
+        }
+      },
+      "residual_late": {
+        "spearman": {
+          "r": 0.2523125956867431,
+          "p": 0.0007557001553541853,
+          "n": 175
+        },
+        "pearson": {
+          "r": 0.21155026609817537,
+          "p": 0.004948446663453588,
+          "n": 175
+        }
+      },
+      "quartiles": {
+        "late_threshold": 33.0,
+        "f10_threshold": 32.0,
+        "full_season_threshold": 125.0,
+        "top_f10_base_rate": 0.26285714285714284,
+        "top_late_count": 47,
+        "top_late_and_top_f10_count": 19,
+        "top_late_hit_rate": 0.40425531914893614,
+        "top_late_lift_vs_base": 1.5379278445883442,
+        "top_full_count": 45,
+        "top_full_and_top_f10_count": 21,
+        "top_full_hit_rate": 0.4666666666666667,
+        "top_full_lift_vs_base": 1.7753623188405798,
+        "mean_f10_top_late": 26.872340425531913,
+        "mean_f10_others": 18.46875,
+        "difference_in_means": 8.403590425531913
+      }
+    },
+    "def_gk": {
+      "segment": "DEF/GK",
+      "n": 115,
+      "correlations": {
+        "full_season_2425": {
+          "spearman": {
+            "r": 0.2765511360348459,
+            "p": 0.002772821614442382,
+            "n": 115
+          },
+          "pearson": {
+            "r": 0.26580040981743275,
+            "p": 0.004090614003455939,
+            "n": 115
+          }
+        },
+        "gw1_28": {
+          "spearman": {
+            "r": 0.2374786064936415,
+            "p": 0.010602862012723133,
+            "n": 115
+          },
+          "pearson": {
+            "r": 0.26352591492327804,
+            "p": 0.004432656541720059,
+            "n": 115
+          }
+        },
+        "gw29_38": {
+          "spearman": {
+            "r": 0.1591476826989857,
+            "p": 0.08934363490457738,
+            "n": 115
+          },
+          "pearson": {
+            "r": 0.12615828793702494,
+            "p": 0.17911269793284673,
+            "n": 115
+          }
+        },
+        "acceleration": {
+          "spearman": {
+            "r": -0.06045331251055581,
+            "p": 0.5210064186758908,
+            "n": 115
+          },
+          "pearson": {
+            "r": -0.06878820289079514,
+            "p": 0.4650976689900015,
+            "n": 115
+          }
+        }
+      },
+      "regression": {
+        "early_only_r2": 0.0694459078361509,
+        "early_plus_late_r2": 0.0726928704948786,
+        "incremental_r2": 0.0032469626587277034,
+        "late_coefficient": 0.8192185255724106,
+        "late_p": 0.5324364391941256,
+        "early_coefficient": 4.503196665450075,
+        "early_p": 0.010048542265929121
+      },
+      "cross_validated_r2": {
+        "early_only": {
+          "mean": -0.013323140200553318,
+          "sd": 0.20172014288042292,
+          "folds": 5
+        },
+        "early_plus_late": {
+          "mean": -0.03947087344067497,
+          "sd": 0.20204507871580757,
+          "folds": 5
+        }
+      },
+      "residual_late": {
+        "spearman": {
+          "r": 0.0837692229674432,
+          "p": 0.37342453186556657,
+          "n": 115
+        },
+        "pearson": {
+          "r": 0.056982125782805794,
+          "p": 0.5452577133196244,
+          "n": 115
+        }
+      },
+      "quartiles": {
+        "late_threshold": 32.0,
+        "f10_threshold": 35.5,
+        "full_season_threshold": 111.0,
+        "top_f10_base_rate": 0.25217391304347825,
+        "top_late_count": 30,
+        "top_late_and_top_f10_count": 9,
+        "top_late_hit_rate": 0.3,
+        "top_late_lift_vs_base": 1.1896551724137931,
+        "top_full_count": 30,
+        "top_full_and_top_f10_count": 12,
+        "top_full_hit_rate": 0.4,
+        "top_full_lift_vs_base": 1.5862068965517242,
+        "mean_f10_top_late": 25.533333333333335,
+        "mean_f10_others": 21.2,
+        "difference_in_means": 4.333333333333336
+      }
+    }
+  },
+  "examples": {
+    "successful_persistence": [
+      {
+        "player": "Antoine Semenyo",
+        "web_name": "Semenyo",
+        "position": "MID",
+        "points_2425": 165,
+        "gw1_28": 110.0,
+        "gw29_38": 55,
+        "acceleration": 1.5714285714285716,
+        "f10_points": 75.0,
+        "f10_minutes": 900.0
+      },
+      {
+        "player": "Declan Rice",
+        "web_name": "Rice",
+        "position": "MID",
+        "points_2425": 127,
+        "gw1_28": 86.0,
+        "gw29_38": 41,
+        "acceleration": 1.028571428571428,
+        "f10_points": 63.0,
+        "f10_minutes": 803.0
+      },
+      {
+        "player": "Bryan Mbeumo",
+        "web_name": "Mbeumo",
+        "position": "MID",
+        "points_2425": 236,
+        "gw1_28": 173.0,
+        "gw29_38": 63,
+        "acceleration": 0.121428571428571,
+        "f10_points": 53.0,
+        "f10_minutes": 865.0
+      },
+      {
+        "player": "Mohamed Salah",
+        "web_name": "M.Salah",
+        "position": "MID",
+        "points_2425": 344,
+        "gw1_28": 306.0,
+        "gw29_38": 38,
+        "acceleration": -7.128571428571429,
+        "f10_points": 52.0,
+        "f10_minutes": 894.0
+      },
+      {
+        "player": "Iliman Ndiaye",
+        "web_name": "Ndiaye",
+        "position": "FWD",
+        "points_2425": 114,
+        "gw1_28": 81.0,
+        "gw29_38": 33,
+        "acceleration": 0.40714285714285703,
+        "f10_points": 52.0,
+        "f10_minutes": 824.0
+      },
+      {
+        "player": "Nick Pope",
+        "web_name": "Pope",
+        "position": "GK",
+        "points_2425": 102,
+        "gw1_28": 56.0,
+        "gw29_38": 46,
+        "acceleration": 2.5999999999999996,
+        "f10_points": 49.0,
+        "f10_minutes": 900.0
+      },
+      {
+        "player": "Dan Burn",
+        "web_name": "Burn",
+        "position": "DEF",
+        "points_2425": 115,
+        "gw1_28": 73.0,
+        "gw29_38": 42,
+        "acceleration": 1.592857142857143,
+        "f10_points": 48.0,
+        "f10_minutes": 900.0
+      },
+      {
+        "player": "Matty Cash",
+        "web_name": "Cash",
+        "position": "DEF",
+        "points_2425": 76,
+        "gw1_28": 41.0,
+        "gw29_38": 35,
+        "acceleration": 2.0357142857142856,
+        "f10_points": 46.0,
+        "f10_minutes": 876.0
+      },
+      {
+        "player": "Enzo Fernández",
+        "web_name": "Enzo",
+        "position": "MID",
+        "points_2425": 135,
+        "gw1_28": 91.0,
+        "gw29_38": 44,
+        "acceleration": 1.1500000000000004,
+        "f10_points": 45.0,
+        "f10_minutes": 798.0
+      },
+      {
+        "player": "Bruno Borges Fernandes",
+        "web_name": "B.Fernandes",
+        "position": "MID",
+        "points_2425": 174,
+        "gw1_28": 135.0,
+        "gw29_38": 39,
+        "acceleration": -0.9214285714285713,
+        "f10_points": 45.0,
+        "f10_minutes": 890.0
+      },
+      {
+        "player": "Mohammed Kudus",
+        "web_name": "Kudus",
+        "position": "MID",
+        "points_2425": 106,
+        "gw1_28": 72.0,
+        "gw29_38": 34,
+        "acceleration": 0.8285714285714283,
+        "f10_points": 45.0,
+        "f10_minutes": 875.0
+      },
+      {
+        "player": "Jarrod Bowen",
+        "web_name": "Bowen",
+        "position": "MID",
+        "points_2425": 193,
+        "gw1_28": 120.0,
+        "gw29_38": 73,
+        "acceleration": 3.0142857142857142,
+        "f10_points": 44.0,
+        "f10_minutes": 900.0
+      },
+      {
+        "player": "Ryan Sessegnon",
+        "web_name": "Sessegnon",
+        "position": "DEF",
+        "points_2425": 57,
+        "gw1_28": 13.0,
+        "gw29_38": 44,
+        "acceleration": 3.935714285714286,
+        "f10_points": 43.0,
+        "f10_minutes": 746.0
+      },
+      {
+        "player": "Marc Cucurella Saseta",
+        "web_name": "Cucurella",
+        "position": "DEF",
+        "points_2425": 133,
+        "gw1_28": 91.0,
+        "gw29_38": 42,
+        "acceleration": 0.9500000000000002,
+        "f10_points": 43.0,
+        "f10_minutes": 806.0
+      },
+      {
+        "player": "Pedro Lomba Neto",
+        "web_name": "Neto",
+        "position": "MID",
+        "points_2425": 104,
+        "gw1_28": 68.0,
+        "gw29_38": 36,
+        "acceleration": 1.1714285714285717,
+        "f10_points": 43.0,
+        "f10_minutes": 753.0
+      }
+    ],
+    "false_positives": [
+      {
+        "player": "Yoane Wissa",
+        "web_name": "Wissa",
+        "position": "FWD",
+        "points_2425": 185,
+        "gw1_28": 124.0,
+        "gw29_38": 61,
+        "acceleration": 1.6714285714285708,
+        "f10_points": 0.0,
+        "f10_minutes": 0.0
+      },
+      {
+        "player": "Jørgen Strand Larsen",
+        "web_name": "Strand Larsen",
+        "position": "FWD",
+        "points_2425": 145,
+        "gw1_28": 87.0,
+        "gw29_38": 58,
+        "acceleration": 2.6928571428571426,
+        "f10_points": 19.0,
+        "f10_minutes": 617.0
+      },
+      {
+        "player": "Harvey Barnes",
+        "web_name": "Barnes",
+        "position": "MID",
+        "points_2425": 130,
+        "gw1_28": 73.0,
+        "gw29_38": 57,
+        "acceleration": 3.092857142857143,
+        "f10_points": 15.0,
+        "f10_minutes": 388.0
+      },
+      {
+        "player": "Leandro Trossard",
+        "web_name": "Trossard",
+        "position": "MID",
+        "points_2425": 152,
+        "gw1_28": 97.0,
+        "gw29_38": 55,
+        "acceleration": 2.0357142857142856,
+        "f10_points": 31.0,
+        "f10_minutes": 552.0
+      },
+      {
+        "player": "Fabian Schär",
+        "web_name": "Schär",
+        "position": "DEF",
+        "points_2425": 118,
+        "gw1_28": 66.0,
+        "gw29_38": 52,
+        "acceleration": 2.842857142857143,
+        "f10_points": 25.0,
+        "f10_minutes": 424.0
+      },
+      {
+        "player": "Anthony Elanga",
+        "web_name": "Elanga",
+        "position": "MID",
+        "points_2425": 153,
+        "gw1_28": 102.0,
+        "gw29_38": 51,
+        "acceleration": 1.4571428571428569,
+        "f10_points": 15.0,
+        "f10_minutes": 398.0
+      },
+      {
+        "player": "Sandro Tonali",
+        "web_name": "Tonali",
+        "position": "MID",
+        "points_2425": 106,
+        "gw1_28": 56.0,
+        "gw29_38": 50,
+        "acceleration": 3.0,
+        "f10_points": 28.0,
+        "f10_minutes": 793.0
+      },
+      {
+        "player": "Ilkay Gündogan",
+        "web_name": "Gündogan",
+        "position": "MID",
+        "points_2425": 97,
+        "gw1_28": 48.0,
+        "gw29_38": 49,
+        "acceleration": 3.185714285714286,
+        "f10_points": 0.0,
+        "f10_minutes": 0.0
+      },
+      {
+        "player": "Joško Gvardiol",
+        "web_name": "Gvardiol",
+        "position": "DEF",
+        "points_2425": 153,
+        "gw1_28": 105.0,
+        "gw29_38": 48,
+        "acceleration": 1.0499999999999998,
+        "f10_points": 28.0,
+        "f10_minutes": 519.0
+      },
+      {
+        "player": "Omar Marmoush",
+        "web_name": "Marmoush",
+        "position": "FWD",
+        "points_2425": 73,
+        "gw1_28": 26.0,
+        "gw29_38": 47,
+        "acceleration": 3.7714285714285714,
+        "f10_points": 11.0,
+        "f10_minutes": 162.0
+      },
+      {
+        "player": "Rayan Aït-Nouri",
+        "web_name": "Aït-Nouri",
+        "position": "DEF",
+        "points_2425": 125,
+        "gw1_28": 78.0,
+        "gw29_38": 47,
+        "acceleration": 1.9142857142857146,
+        "f10_points": 11.0,
+        "f10_minutes": 203.0
+      },
+      {
+        "player": "Kevin Schade",
+        "web_name": "Schade",
+        "position": "MID",
+        "points_2425": 149,
+        "gw1_28": 102.0,
+        "gw29_38": 47,
+        "acceleration": 1.0571428571428574,
+        "f10_points": 32.0,
+        "f10_minutes": 830.0
+      },
+      {
+        "player": "Luis Díaz",
+        "web_name": "Luis Díaz",
+        "position": "MID",
+        "points_2425": 183,
+        "gw1_28": 138.0,
+        "gw29_38": 45,
+        "acceleration": -0.4285714285714288,
+        "f10_points": 0.0,
+        "f10_minutes": 0.0
+      },
+      {
+        "player": "Martin Ødegaard",
+        "web_name": "Ødegaard",
+        "position": "MID",
+        "points_2425": 116,
+        "gw1_28": 71.0,
+        "gw29_38": 45,
+        "acceleration": 1.9642857142857144,
+        "f10_points": 13.0,
+        "f10_minutes": 201.0
+      },
+      {
+        "player": "Christian Nørgaard",
+        "web_name": "Nørgaard",
+        "position": "MID",
+        "points_2425": 107,
+        "gw1_28": 63.0,
+        "gw29_38": 44,
+        "acceleration": 2.1500000000000004,
+        "f10_points": 2.0,
+        "f10_minutes": 14.0
+      }
+    ],
+    "false_negatives": [
+      {
+        "player": "Erling Haaland",
+        "web_name": "Haaland",
+        "position": "FWD",
+        "points_2425": 181,
+        "gw1_28": 164.0,
+        "gw29_38": 17,
+        "acceleration": -4.157142857142857,
+        "f10_points": 98.0,
+        "f10_minutes": 854.0
+      },
+      {
+        "player": "Gabriel dos Santos Magalhães",
+        "web_name": "Gabriel",
+        "position": "DEF",
+        "points_2425": 117,
+        "gw1_28": 111.0,
+        "gw29_38": 6,
+        "acceleration": -3.3642857142857143,
+        "f10_points": 80.0,
+        "f10_minutes": 900.0
+      },
+      {
+        "player": "Jurriën Timber",
+        "web_name": "J.Timber",
+        "position": "DEF",
+        "points_2425": 114,
+        "gw1_28": 92.0,
+        "gw29_38": 22,
+        "acceleration": -1.0857142857142854,
+        "f10_points": 66.0,
+        "f10_minutes": 791.0
+      },
+      {
+        "player": "Marc Guéhi",
+        "web_name": "Guéhi",
+        "position": "DEF",
+        "points_2425": 116,
+        "gw1_28": 101.0,
+        "gw29_38": 15,
+        "acceleration": -2.107142857142857,
+        "f10_points": 64.0,
+        "f10_minutes": 900.0
+      },
+      {
+        "player": "Riccardo Calafiori",
+        "web_name": "Calafiori",
+        "position": "DEF",
+        "points_2425": 39,
+        "gw1_28": 37.0,
+        "gw29_38": 2,
+        "acceleration": -1.1214285714285714,
+        "f10_points": 60.0,
+        "f10_minutes": 766.0
+      },
+      {
+        "player": "Moisés Caicedo Corozo",
+        "web_name": "Caicedo",
+        "position": "MID",
+        "points_2425": 98,
+        "gw1_28": 71.0,
+        "gw29_38": 27,
+        "acceleration": 0.1642857142857146,
+        "f10_points": 58.0,
+        "f10_minutes": 855.0
+      },
+      {
+        "player": "Micky van de Ven",
+        "web_name": "Van de Ven",
+        "position": "DEF",
+        "points_2425": 32,
+        "gw1_28": 29.0,
+        "gw29_38": 3,
+        "acceleration": -0.7357142857142858,
+        "f10_points": 57.0,
+        "f10_minutes": 889.0
+      },
+      {
+        "player": "Marcos Senesi",
+        "web_name": "Senesi",
+        "position": "DEF",
+        "points_2425": 31,
+        "gw1_28": 21.0,
+        "gw29_38": 10,
+        "acceleration": 0.25,
+        "f10_points": 56.0,
+        "f10_minutes": 887.0
+      },
+      {
+        "player": "Daniel Muñoz",
+        "web_name": "Muñoz",
+        "position": "DEF",
+        "points_2425": 142,
+        "gw1_28": 112.0,
+        "gw29_38": 30,
+        "acceleration": -1.0,
+        "f10_points": 54.0,
+        "f10_minutes": 900.0
+      },
+      {
+        "player": "João Pedro Junqueira de Jesus",
+        "web_name": "João Pedro",
+        "position": "FWD",
+        "points_2425": 126,
+        "gw1_28": 110.0,
+        "gw29_38": 16,
+        "acceleration": -2.3285714285714283,
+        "f10_points": 52.0,
+        "f10_minutes": 847.0
+      },
+      {
+        "player": "David Raya Martin",
+        "web_name": "Raya",
+        "position": "GK",
+        "points_2425": 142,
+        "gw1_28": 111.0,
+        "gw29_38": 31,
+        "acceleration": -0.8642857142857143,
+        "f10_points": 52.0,
+        "f10_minutes": 900.0
+      },
+      {
+        "player": "Maxence Lacroix",
+        "web_name": "Lacroix",
+        "position": "DEF",
+        "points_2425": 114,
+        "gw1_28": 93.0,
+        "gw29_38": 21,
+        "acceleration": -1.2214285714285715,
+        "f10_points": 50.0,
+        "f10_minutes": 900.0
+      },
+      {
+        "player": "Ryan Gravenberch",
+        "web_name": "Gravenberch",
+        "position": "MID",
+        "points_2425": 92,
+        "gw1_28": 71.0,
+        "gw29_38": 21,
+        "acceleration": -0.4357142857142855,
+        "f10_points": 50.0,
+        "f10_minutes": 691.0
+      },
+      {
+        "player": "Trevoh Chalobah",
+        "web_name": "Chalobah",
+        "position": "DEF",
+        "points_2425": 93,
+        "gw1_28": 67.0,
+        "gw29_38": 26,
+        "acceleration": 0.2071428571428573,
+        "f10_points": 49.0,
+        "f10_minutes": 750.0
+      },
+      {
+        "player": "Jean-Philippe Mateta",
+        "web_name": "Mateta",
+        "position": "FWD",
+        "points_2425": 150,
+        "gw1_28": 123.0,
+        "gw29_38": 27,
+        "acceleration": -1.692857142857143,
+        "f10_points": 48.0,
+        "f10_minutes": 869.0
+      }
+    ],
+    "top_final_ten": [
+      {
+        "player": "Jarrod Bowen",
+        "web_name": "Bowen",
+        "position": "MID",
+        "points_2425": 193,
+        "gw1_28": 120.0,
+        "gw29_38": 73,
+        "acceleration": 3.0142857142857142,
+        "f10_points": 44.0,
+        "f10_minutes": 900.0
+      },
+      {
+        "player": "Bryan Mbeumo",
+        "web_name": "Mbeumo",
+        "position": "MID",
+        "points_2425": 236,
+        "gw1_28": 173.0,
+        "gw29_38": 63,
+        "acceleration": 0.121428571428571,
+        "f10_points": 53.0,
+        "f10_minutes": 865.0
+      },
+      {
+        "player": "Eberechi Eze",
+        "web_name": "Eze",
+        "position": "MID",
+        "points_2425": 148,
+        "gw1_28": 86.0,
+        "gw29_38": 62,
+        "acceleration": 3.1285714285714286,
+        "f10_points": 39.0,
+        "f10_minutes": 613.0
+      },
+      {
+        "player": "Yoane Wissa",
+        "web_name": "Wissa",
+        "position": "FWD",
+        "points_2425": 185,
+        "gw1_28": 124.0,
+        "gw29_38": 61,
+        "acceleration": 1.6714285714285708,
+        "f10_points": 0.0,
+        "f10_minutes": 0.0
+      },
+      {
+        "player": "Jacob Murphy",
+        "web_name": "J.Murphy",
+        "position": "MID",
+        "points_2425": 159,
+        "gw1_28": 101.0,
+        "gw29_38": 58,
+        "acceleration": 2.1928571428571426,
+        "f10_points": 34.0,
+        "f10_minutes": 490.0
+      },
+      {
+        "player": "Jørgen Strand Larsen",
+        "web_name": "Strand Larsen",
+        "position": "FWD",
+        "points_2425": 145,
+        "gw1_28": 87.0,
+        "gw29_38": 58,
+        "acceleration": 2.6928571428571426,
+        "f10_points": 19.0,
+        "f10_minutes": 617.0
+      },
+      {
+        "player": "Harvey Barnes",
+        "web_name": "Barnes",
+        "position": "MID",
+        "points_2425": 130,
+        "gw1_28": 73.0,
+        "gw29_38": 57,
+        "acceleration": 3.092857142857143,
+        "f10_points": 15.0,
+        "f10_minutes": 388.0
+      },
+      {
+        "player": "Antoine Semenyo",
+        "web_name": "Semenyo",
+        "position": "MID",
+        "points_2425": 165,
+        "gw1_28": 110.0,
+        "gw29_38": 55,
+        "acceleration": 1.5714285714285716,
+        "f10_points": 75.0,
+        "f10_minutes": 900.0
+      },
+      {
+        "player": "Leandro Trossard",
+        "web_name": "Trossard",
+        "position": "MID",
+        "points_2425": 152,
+        "gw1_28": 97.0,
+        "gw29_38": 55,
+        "acceleration": 2.0357142857142856,
+        "f10_points": 31.0,
+        "f10_minutes": 552.0
+      },
+      {
+        "player": "Fabian Schär",
+        "web_name": "Schär",
+        "position": "DEF",
+        "points_2425": 118,
+        "gw1_28": 66.0,
+        "gw29_38": 52,
+        "acceleration": 2.842857142857143,
+        "f10_points": 25.0,
+        "f10_minutes": 424.0
+      },
+      {
+        "player": "Anthony Elanga",
+        "web_name": "Elanga",
+        "position": "MID",
+        "points_2425": 153,
+        "gw1_28": 102.0,
+        "gw29_38": 51,
+        "acceleration": 1.4571428571428569,
+        "f10_points": 15.0,
+        "f10_minutes": 398.0
+      },
+      {
+        "player": "Sandro Tonali",
+        "web_name": "Tonali",
+        "position": "MID",
+        "points_2425": 106,
+        "gw1_28": 56.0,
+        "gw29_38": 50,
+        "acceleration": 3.0,
+        "f10_points": 28.0,
+        "f10_minutes": 793.0
+      },
+      {
+        "player": "Ilkay Gündogan",
+        "web_name": "Gündogan",
+        "position": "MID",
+        "points_2425": 97,
+        "gw1_28": 48.0,
+        "gw29_38": 49,
+        "acceleration": 3.185714285714286,
+        "f10_points": 0.0,
+        "f10_minutes": 0.0
+      },
+      {
+        "player": "Morgan Rogers",
+        "web_name": "Rogers",
+        "position": "MID",
+        "points_2425": 161,
+        "gw1_28": 113.0,
+        "gw29_38": 48,
+        "acceleration": 0.7642857142857142,
+        "f10_points": 33.0,
+        "f10_minutes": 891.0
+      },
+      {
+        "player": "Joško Gvardiol",
+        "web_name": "Gvardiol",
+        "position": "DEF",
+        "points_2425": 153,
+        "gw1_28": 105.0,
+        "gw29_38": 48,
+        "acceleration": 1.0499999999999998,
+        "f10_points": 28.0,
+        "f10_minutes": 519.0
+      },
+      {
+        "player": "Rúben Gato Alves Dias",
+        "web_name": "Rúben",
+        "position": "DEF",
+        "points_2425": 90,
+        "gw1_28": 43.0,
+        "gw29_38": 47,
+        "acceleration": 3.1642857142857146,
+        "f10_points": 39.0,
+        "f10_minutes": 815.0
+      },
+      {
+        "player": "Kevin Schade",
+        "web_name": "Schade",
+        "position": "MID",
+        "points_2425": 149,
+        "gw1_28": 102.0,
+        "gw29_38": 47,
+        "acceleration": 1.0571428571428574,
+        "f10_points": 32.0,
+        "f10_minutes": 830.0
+      },
+      {
+        "player": "Omar Marmoush",
+        "web_name": "Marmoush",
+        "position": "FWD",
+        "points_2425": 73,
+        "gw1_28": 26.0,
+        "gw29_38": 47,
+        "acceleration": 3.7714285714285714,
+        "f10_points": 11.0,
+        "f10_minutes": 162.0
+      },
+      {
+        "player": "Rayan Aït-Nouri",
+        "web_name": "Aït-Nouri",
+        "position": "DEF",
+        "points_2425": 125,
+        "gw1_28": 78.0,
+        "gw29_38": 47,
+        "acceleration": 1.9142857142857146,
+        "f10_points": 11.0,
+        "f10_minutes": 203.0
+      },
+      {
+        "player": "Nick Pope",
+        "web_name": "Pope",
+        "position": "GK",
+        "points_2425": 102,
+        "gw1_28": 56.0,
+        "gw29_38": 46,
+        "acceleration": 2.5999999999999996,
+        "f10_points": 49.0,
+        "f10_minutes": 900.0
+      },
+      {
+        "player": "Jordan Pickford",
+        "web_name": "Pickford",
+        "position": "GK",
+        "points_2425": 158,
+        "gw1_28": 113.0,
+        "gw29_38": 45,
+        "acceleration": 0.4642857142857144,
+        "f10_points": 35.0,
+        "f10_minutes": 900.0
+      },
+      {
+        "player": "Martin Ødegaard",
+        "web_name": "Ødegaard",
+        "position": "MID",
+        "points_2425": 116,
+        "gw1_28": 71.0,
+        "gw29_38": 45,
+        "acceleration": 1.9642857142857144,
+        "f10_points": 13.0,
+        "f10_minutes": 201.0
+      },
+      {
+        "player": "Luis Díaz",
+        "web_name": "Luis Díaz",
+        "position": "MID",
+        "points_2425": 183,
+        "gw1_28": 138.0,
+        "gw29_38": 45,
+        "acceleration": -0.4285714285714288,
+        "f10_points": 0.0,
+        "f10_minutes": 0.0
+      },
+      {
+        "player": "Enzo Fernández",
+        "web_name": "Enzo",
+        "position": "MID",
+        "points_2425": 135,
+        "gw1_28": 91.0,
+        "gw29_38": 44,
+        "acceleration": 1.1500000000000004,
+        "f10_points": 45.0,
+        "f10_minutes": 798.0
+      },
+      {
+        "player": "Ryan Sessegnon",
+        "web_name": "Sessegnon",
+        "position": "DEF",
+        "points_2425": 57,
+        "gw1_28": 13.0,
+        "gw29_38": 44,
+        "acceleration": 3.935714285714286,
+        "f10_points": 43.0,
+        "f10_minutes": 746.0
+      }
+    ]
+  },
+  "interpretation": "The direct ten-to-ten bridge showed a modest relationship: Spearman rho was 0.255 for 2024/25 GW29-38 points against 2025/26 GW1-10 points, versus 0.274 for the full 2024/25 season. Late-season level retained independent predictive value after controlling for GW1-28; raw acceleration did not show a reliable positive relationship. Cross-validated R-squared changed from 0.058 to 0.087 when the final-ten rate was added. The evidence supports Exit Velocity as a modest recency and role signal, not a claim that momentum itself survives the summer."
+}
